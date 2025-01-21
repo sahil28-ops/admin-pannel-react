@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Open Sans", serif !important;
+  background: #ebe9e9;
+}
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+/* ::-webkit-scrollbar-thumb {
+  background: #0858f7 !important;
+} 
+::-webkit-scrollbar-track{
+  background: transparent !important;
+} */
+
+.btn-blue {
+  background: #0858f7 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.btn-lg {
+  padding: 5px 20px !important;
+}
+.btn-round {
+  border-radius: 30px !important;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+body.dark header {
+  background: #112143 !important;
+}
+
+header .logo {
+  width: 80px;
+}
+
+/* header .row {
+  margin: 0px !important;
+} */
+header button.rounded-circle {
+  min-width: 40px !important;
+  width: 40px !important ;
+  height: 40px !important;
+  background: #f0f5ff;
+  color: #0858f7;
+}
+header button.rounded-circle svg {
+  color: #292929;
+  font-size: 18px;
+}
+header button.rounded-circle:hover svg {
+  color: #0858f7 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+body.dark header button.rounded-circle {
+  background: #12254e;
+}
+body.dark header button.rounded-circle svg {
+  color: #fff;
+}
+
+.searchBox {
+  width: 400px !important;
+  height: 40px;
+  border-radius: 6px;
+  background: #f0f5ff;
+  padding: 3px 15px;
+}
+body.dark .searchBox {
+  background: #12254e;
+}
+.searchBox input {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  padding-left: 0px;
+  font-size: 14px;
+  color: #292929;
+}
+.searchBox::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.searchBox svg {
+  font-size: 18px;
+  color: #292929;
+}
+body.dark .searchBox svg {
+  color: #fff;
+}
+.userImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #0858f7;
+  padding: 2px;
+  border-radius: 100%;
+}
+.userImg .rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.userImg .rounded-circle img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* .userInfo h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.userInfo p {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+} */
+.myAcc {
+  text-align: start !important;
+  color: #0858f7 !important;
+  text-transform: capitalize !important;
+}
+.myAcc .userInfo {
+  padding-left: 10px;
+}
+
+.myAcc .userInfo h5 {
+  /* Updated h4 to h5 to match the component */
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  /* margin-top: 5px; */
+  color: #292929;
+}
+
+.myAcc .userInfo p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.7;
+}
+#account-menu li {
+  font-size: 15px !important;
+  padding: 12px 15px !important;
+}
+#account-menu li svg {
+  font-size: 20px !important;
+}
+#notifications .MuiPaper-elevation {
+  right: 240px !important;
+  width: 300px !important ;
+  left: auto !important;
+  margin-top: 11px;
+}
+.dropdown_list {
+  font-size: 5px;
+  font-weight: 400px;
+}
+.dropdownInfo {
+  padding-left: 15px;
+}
+.dropdownInfo h4 {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: break-spaces;
+  line-height: 21px;
+  margin-top: 0%;
+  margin-bottom: 0px;
+}
+.dropdown_list li.MuiButtonBase-root {
+  background: #ebf6ff !important;
+  color: #000 !important;
+  padding: 10px 15px !important;
+}
+.dropdown_list li.MuiButtonBase-root:hover {
+  background: #cad7de !important;
+}
+.dropdown_list .head {
+  padding: 10px 0px;
+}
+.dropdownInfo b {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.dropdownInfo p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0%;
+}
+.text-sky {
+  color: #0858f7 !important;
+}
+.dropdown_list .scroll {
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.main .sidebarwrapper {
+  width: 20%;
+  flex: 0 0 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarwrapper.toggle {
+  width: 0% !important;
+  flex: 0 0 0% !important;
+  transition: all 0.3s ease-in-out;
+}
+.main .sidebarwrapper.toggle .sidebar {
+  left: -100% !important;
+}
+.main .sidebarwrapper .sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0%;
+  background: #fff;
+  max-height: calc(100% - 70px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+/* .main .sidebarwrapper .sidebar::-webkit-scrollbar{
+ width: 3px !important;
+  }
+.main .sidebarwrapper .sidebar::-webkit-scrollbar-thumb{
+background: transparent !important;
+}
+.main .sidebarwrapper:hover .sidebar::-webkit-scrollbar{
+background: #0858f7 !important;
+} */
+.main .sidebarwrapper .sidebar ul {
+  margin-bottom: 0%;
+  padding: 5px 10px;
+}
+.main .sidebarwrapper .sidebar ul li {
+  list-style: none;
+}
+.main .sidebarwrapper .sidebar ul li button {
+  color: #000;
+  text-align: left;
+  justify-content: left;
+  border-radius: 10px !important;
+  padding: 12px 15px !important;
+  align-items: center;
+  text-transform: capitalize !important;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", serif !important;
+}
+.main .sidebarwrapper .sidebar ul li button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.main .sidebarwrapper .sidebar ul li button svg {
+  color: #000;
+  opacity: 0.8;
+  font-size: 20px;
+}
+.main .sidebarwrapper .sidebar ul li button .arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+
+  transition: all 0.3s ease-in-out;
+  /* transform: rotate(0deg); */
+}
+/* }.main .sidebarwrapper .sidebar ul li button:hover{
+  background: #000; 
+  opacity: 0.5;
+} */
+.main .sidebarwrapper .sidebar ul li button * {
+  color: #000;
+}
+
+.main .sidebarwrapper .sidebar ul li button:hover {
+  background: #f1f1f1 !important;
+}
+.main .sidebarwrapper .sidebar ul li button.active {
+  background: #f1f1f1 !important;
+}
+.main .sidebarwrapper .sidebar ul li button.active .icon svg {
+  color: #0858f7 !important;
+}
+.main .sidebarwrapper .sidebar ul li button.active .arrow {
+  transform: rotate(90deg);
+}
+.main .sidebarwrapper .sidebar ul .submenu {
+  padding: 0px 45px;
+  position: relative;
+  height: 0px;
+}
+.main .sidebarwrapper .sidebar ul .submenu::before {
+  content: "";
+  width: 1px;
+  height: 95%;
+  position: absolute;
+  top: 0%;
+  left: 25px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.main .sidebarwrapper .sidebar ul .submenu li {
+  width: 100%;
+  list-style: none;
+}
+.main .sidebarwrapper .sidebar ul .submenu li a {
+  color: #5e5d72 !important;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.main .sidebarwrapper .sidebar ul .submenu li a:hover {
+  color: #0858f7;
+}
+.main .sidebarwrapper .sidebar ul .submenuWrapper {
+  transition: all 0.4s ease-in-out;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+/* .main .sidebarwrapper .sidebar ul .submenuWrapper.colapsed {height: 0px;} */
+.main .sidebarwrapper .sidebar ul .submenuWrapper.colapsed .submenu {
+  opacity: 0;
+}
+.main .sidebarwrapper .sidebar ul .submenuWrapper.colapse {
+  height: auto;
+  overflow: inherit;
+  opacity: 1;
+  padding: 10px 0px;
+}
+.main .sidebarwrapper .sidebar ul .submenuWrapper.colapse .submenu {
+  opacity: 1;
+  height: auto;
+}
+.main .content {
+  width: 80%;
+  flex: 0 0 80%;
+  transition: all 0.3 ease-in-out;
+}
+.main .content.toggle {
+  width: 100%;
+  flex: 0 0 100%;
+}
+.right-content {
+  padding: 90px 30px;
+  padding-bottom: 10px;
+}
+.dashboardBoxWrapper {
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.dashboardBoxWrapper .dashboardBox {
+  width: 48%;
+  height: 170px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left !important;
+  color: #fff;
+  text-transform: capitalize !important;
+}
+.dashboardBoxWrapper .dashboardBox .col1 h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.dashboardBoxWrapper .dashboardBox .col1 span {
+  font-size: 35px !important;
+  font-weight: bold;
+  line-height: 45px;
+}
+.dashboardBoxWrapper .dashboardBox .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+.dashboardBoxWrapper .dashboardBox .icon svg {
+  font-size: 36px;
+  opacity: 0.4;
+  color: #fff;
+}
+.dashboardBoxWrapper .dashboardBox .toggleIcon {
+  font-family: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+.dashboardBoxWrapper .dashboardBox .chart {
+  font-size: 60px;
+  color: #000;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.dashboardBoxWrapper .dashboardBox .chart svg {
+  font-size: 110px;
+  color: #000;
+}
+.dashboardBoxWrapper .dashboardBox .bottmEle {
+  position: relative;
+  top: 15px;
+}
+.dashboardBoxWrapperRow .box {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboardBoxWrapper .dashboardBox .MuiButton-root svg {
+  color: #000 !important;
+  font-size: 17px !important;
+  margin-right: 10px !important;
+}
+.dropdown_menu .MuiButtonBase-root svg {
+  margin-right: 10px !important;
+}
+.graphBox {
+  background-image: linear-gradient(to bottom right, #04338b, #296ffa);
+  border-radius: 10px;
+  padding: 25px;
+}
+.toggleIcon {
+  font-family: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+
+.toggleIcon svg {
+  color: #fff !important;
+  font-size: 20px !important;
+  opacity: 1 !important;
+}
+.graphBox h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.graphBox p {
+  font-size: 13px !important;
+  color: #fff !important;
+  opacity: 0.7;
+}
+.card {
+  margin: 20px 0px;
+  border-radius: 10px;
+  color: #fff;
+}
+.card .hd {
+  font-size: 18px;
+  font-weight: bold;
+  color: #403e57;
+}
+.cardFilters .col-md-3 h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #403e57;
+  text-transform: capitalize;
+}
+.cardFilters .col h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #403e57;
+  text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #403e57;
+}
+.table .thead-dark th {
+  background-color: #0858f7;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  font-size: 13px !important;
+}
+.table tbody td {
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #403e57;
+}
+.table tbody .actions button {
+  min-width: 32px !important;
+  width: 32px !important;
+  margin: 0px 3px !important;
+  height: 32px !important;
+}
+.table tbody .actions button svg {
+  font-size: 32px !important;
+}
+.table tbody .actions .secondary {
+  background: rgba(203, 60, 231, 0.1);
+}
+.table tbody .actions .success {
+  background: rgba(26, 159, 83, 0.1);
+}
+.table tbody .actions .error {
+  background: rgba(241, 17, 51, 0.1);
+}
+table.v-align td {
+  vertical-align: middle !important;
+}
+table td .imgWrapper {
+  width: 20%;
+  flex: 0 0 20%;
+}
+
+table td .info {
+  width: 65%;
+  flex: 0 0 65%;
+}
+table td .info h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+table td .info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 18px;
+  color: #5e5d72;
+  margin-bottom: 0px;
+}
+table.v-align td .productBox {
+  width: 140px;
+}
+.tableFooter {
+  padding-bottom: 20px;
+}
+.tableFooter .pagination {
+  margin-left: auto;
+}
+.css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #0858f7 !important;
+}
