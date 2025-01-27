@@ -22,38 +22,16 @@ const Sidebar = () => {
       <div className="sidebar">
         <ul>
           <li>
-            <Button
-              className={`w-100 ${activeTab === 1 ? "active" : ""}`}
-              onClick={() => isOpenSubMenu(1)}
-            >
-              <span className="icon">
-                <MdDashboard />
-              </span>
-              Dashboard
-              <span className="arrow">
-                <FaAngleRight />
-              </span>
-            </Button>
-            <div
-              className={`submenuWrapper ${
-                activeTab === 1 && isToggleSubmenu === true
-                  ? "colapse"
-                  : "colapsed"
-              }`}
-            >
-              <ul className="submenu">
-                <li>
-                  <Link to="#">Dashboard Overview</Link>
-                </li>
-                <li>
-                  <Link to="#">Dashboard Analytics</Link>
-                </li>
-                <li>
-                  <Link to="#">Dashboard Settings</Link>
-                </li>
-              </ul>
-            </div>
+            <Link to={"/"} className="no-underline text-gray-800 w-full block">
+              <Button className="w-full flex items-center">
+                <span className="icon mr-2">
+                  <MdDashboard />
+                </span>
+                Dashboard
+              </Button>
+            </Link>
           </li>
+
           <li>
             <Button
               className={`w-100 ${activeTab === 2 ? "active" : ""}`}
@@ -76,13 +54,11 @@ const Sidebar = () => {
             >
               <ul className="submenu">
                 <li>
-                  <Link to="#">Category List</Link>
+                  <Link to="/categoryList">Category List</Link>
                 </li>
+
                 <li>
-                  <Link to="#">Category Details</Link>
-                </li>
-                <li>
-                  <Link to="#">Add Category</Link>
+                  <Link to="/createCategory">Add Category</Link>
                 </li>
               </ul>
             </div>
@@ -109,13 +85,10 @@ const Sidebar = () => {
             >
               <ul className="submenu">
                 <li>
-                  <Link to="#">Product List</Link>
+                  <Link to="/products">Product View</Link>
                 </li>
                 <li>
-                  <Link to="#">Product View</Link>
-                </li>
-                <li>
-                  <Link to="#">Product Upload</Link>
+                  <Link to="/productUpload">Product Upload</Link>
                 </li>
               </ul>
             </div>
@@ -142,84 +115,17 @@ const Sidebar = () => {
             >
               <ul className="submenu">
                 <li>
-                  <Link to="#">Order List</Link>
+                  <Link to="/orderList">Order List</Link>
                 </li>
                 <li>
-                  <Link to="#">Order Details</Link>
+                  <Link to="/orderDetails">Order Details</Link>
                 </li>
                 <li>
-                  <Link to="#">Track Orders</Link>
+                  <Link to="/trackOrder">Track Orders</Link>
                 </li>
               </ul>
             </div>
           </li>
-          <li>
-            <Button
-              className={`w-100 ${activeTab === 5 ? "active" : ""}`}
-              onClick={() => isOpenSubMenu(5)}
-            >
-              <span className="icon">
-                <FaBell />
-              </span>
-              Notifications
-              <span className="arrow">
-                <FaAngleRight />
-              </span>
-            </Button>
-            <div
-              className={`submenuWrapper ${
-                activeTab === 5 && isToggleSubmenu === true
-                  ? "colapse"
-                  : "colapsed"
-              }`}
-            >
-              <ul className="submenu">
-                <li>
-                  <Link to="#">All Notifications</Link>
-                </li>
-                <li>
-                  <Link to="#">Unread Notifications</Link>
-                </li>
-                <li>
-                  <Link to="#">Notification Settings</Link>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <Button
-              className={`w-100 ${activeTab === 6 ? "active" : ""}`}
-              onClick={() => isOpenSubMenu(6)}
-            >
-              <span className="icon">
-                <IoMdSettings />
-              </span>
-              Settings
-              <span className="arrow">
-                <FaAngleRight />
-              </span>
-            </Button>
-            <div
-              className={`submenuWrapper ${
-                activeTab === 6 && isToggleSubmenu === true
-                  ? "colapse"
-                  : "colapsed"
-              }`}
-            >
-              <ul className="submenu">
-                <li>
-                  <Link to="#">Profile Settings</Link>
-                </li>
-                <li>
-                  <Link to="#">Account Settings</Link>
-                </li>
-                <li>
-                  <Link to="#">Privacy Settings</Link>
-                </li>
-              </ul>
-            </div>
-          </li>
-          
         </ul>
       </div>
     </>

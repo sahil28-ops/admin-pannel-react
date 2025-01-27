@@ -14,6 +14,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { MdDeleteForever, MdEdit } from "react-icons/md";
 import Pagination from "@mui/material/Pagination";
+import { Link } from "react-router-dom";
 
 export const data = [
   ["Task", "Hours per Day"],
@@ -221,7 +222,9 @@ const Dashboard = () => {
                 <td>
                   <div className="actions d-flex align-items-center">
                     <Button className=" secondary" color="secondary">
-                      <FaEye />
+                      <Link className="eye" to={"productDetails"}>
+                        <FaEye  />
+                      </Link>
                     </Button>
 
                     <Button className="success" color="success">
@@ -451,7 +454,13 @@ const Dashboard = () => {
             </tbody>
           </table>
           <div className="d-flex tableFooter">
-            <Pagination count={46} color="primary" className="pagination" showFirstButton showLastButton/>
+            <Pagination
+              count={46}
+              color="primary"
+              className="pagination"
+              showFirstButton
+              showLastButton
+            />
           </div>
         </div>
       </div>

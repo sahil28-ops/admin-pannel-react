@@ -521,15 +521,39 @@ background: #0858f7 !important;
   color: #403e57;
   text-transform: capitalize;
 }
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+p,
+span,
+a,
+li,
+td,
+th {
   color: #403e57;
 }
+h3 {
+  line-height: 25px;
+  font-weight: 700;
+}
+
+/* body.dark .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+body.dark .css-bpeome-MuiSvgIcon-root-MuiSelect-Icon {
+  color: rgba(255, 255, 255, 0.8) !important;
+} */
 .table .thead-dark th {
   background-color: #0858f7;
   border-color: rgba(255, 255, 255, 0.1) !important;
@@ -545,6 +569,9 @@ p {
   width: 32px !important;
   margin: 0px 3px !important;
   height: 32px !important;
+}
+.table tbody .actions button .eye svg {
+  font-size: 16px !important;
 }
 .table tbody .actions button svg {
   font-size: 32px !important;
@@ -598,4 +625,79 @@ table.v-align td .productBox {
 }
 .css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: #0858f7 !important;
+}
+.slick-slide {
+  outline: none !important;
+}
+/* Custom styles for Slider */
+.sliderBig .slick-slide .item {
+  border-radius: 7px;
+  overflow: hidden;
+  border: #cad7de 1px solid;
+}
+
+.sliderBig .slick-slide:hover .item {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease;
+}
+
+.sliderSml .slick-slide {
+  padding-right: 10px !important;
+  margin-top: 2px !important;
+}
+
+.sliderSml .slick-slide .item {
+  border-radius: 7px;
+  overflow: hidden;
+  border: #cad7de 1px solid;
+}
+
+.sliderSml .slick-slide:hover .item {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease;
+}
+
+.sliderSml .slick-slide .item:hover {
+  border-color: #6b7280; /* Change border color on hover */
+}
+
+.productInfo .icon {
+  display: inline-block;
+  color: #333;
+  width: 28%;
+  flex: 0 0 28%;
+}
+.productInfo .icon svg {
+  font-size: 18px;
+}
+.productInfo .name {
+  font-weight: 600;
+  color: #333;
+  width: 72%;
+  flex: 0 0 72%;
+  font-size: 15px;
+}
+
+.productInfo .value {
+  font-size: 15px;
+  color: #555;
+  padding-left: 10px;
+}
+.productDetailsSection .productInfo .row .col-sm-8 span {
+  opacity: 0.8;
+  font-size: 13px;
+}
+.productDetailsSection .productInfo .row {
+  margin-bottom: 10px !important;
+}
+.tags {
+  margin-bottom: 0px !important;
+}
+.tags li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebf6ff !important;
+  border-radius: 5px;
+  border: 1px solid #6b7280;
 }
